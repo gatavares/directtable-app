@@ -1,0 +1,35 @@
+// #FD485C icons select
+// #189754 icon verde
+// #DC3545 icon vermelho
+
+
+// #EBF0F6 fundo
+// #FFFFFF navbar
+// #545353 icons
+// #313131 texto
+// #313131 primario
+// #676767 secundario
+
+// #CADBFE troca discilina
+// #FFD8A9 troca sala
+// #DD5C5C troca cancelamento
+
+
+// #191919 fundo Dark
+// #191919 navbar Dark
+// #FFFFFF icons Dark
+// #FFFFFF texto Dark
+// #343434 primario Dark
+// #676767 secundario Dark
+
+// #4985FF troca sala Dark
+// #FF9514 troca desciplina Dark
+// #DC3545 troca cancelamento Dark
+
+
+// #B1D243 75% gpsi
+// #384D9E 75% tm
+// #489EDB 75% gei
+// #F9D94A 75% teac
+// #EC5A33 75% td3d
+// #EA3489 75% cef
