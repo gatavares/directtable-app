@@ -8,42 +8,42 @@ import * as BsIcons from 'react-icons/bs';
 export const SidebarData = [
     {
         title: 'Início',
-        path: '/',
+        path: '/directtable-app/',
         icon: <AiIcons.AiOutlineHome/>,
         className: 'nav-text inicio',
         userType: 0, //Aluno
     },
     {
         title: 'Horário',
-        path: '/horario',
+        path: '/directtable-app/horario',
         icon: <BsIcons.BsCalendar2Week/>,
         className: 'nav-text horario',
         userType: 0,
     },
     {
         title: 'Escola',
-        path: '/escola',
+        path: '/directtable-app/escola',
         icon: <FaIcons.FaSchool/>,
         className: 'nav-text escola',
         userType: 2, //Admin
     },
     {
         title: 'Gestão',
-        path: '/gestao',
+        path: '/directtable-app/gestao',
         icon: <BsIcons.BsCalendar2Range/>,
         className: 'nav-text gestao',
         userType: 1, //Conta de monitor da escola
     },
     {
         title: 'FAQ',
-        path: '/faq',
+        path: '/directtable-app/faq',
         icon: <Io5Icons.IoBookOutline/>,
         className: 'nav-text faq',
         userType: 0,
     },
     {
         title: 'Suporte',
-        path: '/suporte',
+        path: '/directtable-app/suporte',
         icon: <IoIcons.IoMdHelpCircleOutline/>,
         className: 'nav-text suporte',
         userType: 0,

@@ -147,26 +147,26 @@ export default function Sidenav() {
   const url = useLocation();
 
   const getUrl = () => {
-    if (url.pathname == '/') {
-      setMenuData('/');
+    if (url.pathname == '/directtable-app/') {
+      setMenuData('/directtable-app/');
     }
-    else if (url.pathname == '/horario') {
-      setMenuData('/horario');
+    else if (url.pathname == '/directtable-app/horario') {
+      setMenuData('/directtable-app/horario');
     }
     else if (url.pathname == '/escola') {
-      setMenuData('/escola');
+      setMenuData('/directtable-app/escola');
     }
     else if (url.pathname == '/gestao') {
-      setMenuData('/gestao');
+      setMenuData('/directtable-app/gestao');
     }
     else if (url.pathname == '/faq') {
-      setMenuData('/faq');
+      setMenuData('/directtable-app/faq');
     }
     else if (url.pathname == '/suporte') {
-      setMenuData('/suporte');
+      setMenuData('/directtable-app/suporte');
     }
     else if (url.pathname == '/entrar') {
-      setMenuData('/entrar');
+      setMenuData('/directtable-app/entrar');
     }
   }
 
@@ -313,13 +313,13 @@ export default function Sidenav() {
         </Drawer>
 
         <Box component="main" sx={{ flexGrow: 1, p: 3, backgroundColor: colors.fundo[500], height: '200%' }}>
-          {menuData == "/" && <Home />}
-          {menuData == "/horario" && <Horario />}
-          {menuData == "/escola" && <Escola />}
-          {menuData == "/gestao" && <ERC />}
-          {menuData == "/faq" && <FAQ />}
-          {menuData == "/suporte" && <Suporte />}
-          {menuData == "/entrar" && <LandingPage />}
+          {menuData == "/directtable-app/" && <Home />}
+          {menuData == "/directtable-app/horario" && <Horario />}
+          {menuData == "/directtable-app/escola" && <Escola />}
+          {menuData == "/directtable-app/gestao" && <ERC />}
+          {menuData == "/directtable-app/faq" && <FAQ />}
+          {menuData == "/directtable-app/suporte" && <Suporte />}
+          {menuData == "/directtable-app/entrar" && <LandingPage />}
         </Box>
       </Box>
     </>

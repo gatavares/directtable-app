@@ -21,13 +21,13 @@ function App() {
           <Router>
             <Navbar />
             <Routes>
-              <Route path='/horario' />
-              <Route path='/horario' />
-              <Route path='/escola' />
-              <Route path='/gestao' />
-              <Route path='/faq' />
-              <Route path='/suporte' />
-              <Route path='/entrar' />
+              <Route path='/directtable-app/horario' />
+              <Route path='/directtable-app/horario' />
+              <Route path='/directtable-app/escola' />
+              <Route path='/directtable-app/gestao' />
+              <Route path='/directtable-app/faq' />
+              <Route path='/directtable-app/suporte' />
+              <Route path='/directtable-app/entrar' />
             </Routes>
           </Router>
         </div>
