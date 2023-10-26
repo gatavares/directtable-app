@@ -140,7 +140,7 @@ export default function Calendar() {
   useEffect(() => {
     axios({
       method: "get",
-      url: `http://localhost:4000/carregar/turmas`,
+      url: `https://directtable-s.onrender.com/carregar/turmas`,
     }).then((response) => {
       response.data.forEach(element => {
         data.push({
@@ -172,7 +172,7 @@ export default function Calendar() {
 
     axios({
       method: "get",
-      url: `http://localhost:4000/carregar/escola`,
+      url: `https://directtable-s.onrender.com/carregar/escola`,
     }).then((response) => {
       response.data.forEach(element => {
         disciplinas.push({
@@ -298,7 +298,7 @@ export default function Calendar() {
     //mandar para a firebase
     axios({
       method: "get",
-      url: `http://localhost:4000/alterar/${dataInicio}/${dataFim}/${turma}/${disciplina}/${disciplinaAntiga}/${sala}/${salaAntiga}/${professor}/${alterado}/`,
+      url: `https://directtable-s.onrender.com/alterar/${dataInicio}/${dataFim}/${turma}/${disciplina}/${disciplinaAntiga}/${sala}/${salaAntiga}/${professor}/${alterado}/`,
     }).then((response) => {
       if (response.data['saved']) {
         window.location.reload();

@@ -62,7 +62,7 @@ function Login() {
 
             axios({
                 method: "get",
-                url: `http://localhost:4000/entrar/${userCredencial.user.uid}/${userCredencial.user.email}`,
+                url: `https://directtable-s.onrender.com/entrar/${userCredencial.user.uid}/${userCredencial.user.email}`,
             }).then(function (response) {
                 data = response.data;
                 console.log(data);

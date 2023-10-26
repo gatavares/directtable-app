@@ -155,7 +155,7 @@ function Escola() {
       console.log(JSON.stringify(horas));
 
       setTimeout(async function () {
-        axios.post("http://localhost:4000/dados/horarios", { dados: horas }).then((res) => {
+        axios.post("https://directtable-s.onrender.com/dados/horarios", { dados: horas }).then((res) => {
           console.log(res);
           if (res.status == 200) {
             setSave(true);
@@ -195,7 +195,7 @@ function Escola() {
   useEffect(() => {
     axios({
       method: "get",
-      url: `http://localhost:4000/carregar/professores`,
+      url: `https://directtable-s.onrender.com/carregar/professores`,
     }).then((response) => {
       // console.log(response.data)
       for (i = 0; i < response.data.length; i++) {
@@ -294,7 +294,7 @@ function Escola() {
   function updateProfessor(numero, nome, disciplinas) {
     let disciplinasArr = disciplinas.split(', ')
 
-    axios.post("http://localhost:4000/dados/professor", { numero: numero, nome: nome, disciplinas: disciplinasArr }).then((res) => {
+    axios.post("https://directtable-s.onrender.com/dados/professor", { numero: numero, nome: nome, disciplinas: disciplinasArr }).then((res) => {
       console.log(res);
       if (res.status == 200) {
         setUpdated(true);

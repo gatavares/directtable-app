@@ -135,8 +135,8 @@ function Horario() {
 
     axios({
       method: "get",
-      // url: `http://localhost:4000/carregar/turmas/8.30`,
-      url: `http://localhost:4000/carregar/turmas/${horaCorrente}`,
+      // url: `https://directtable-s.onrender.com/carregar/turmas/8.30`,
+      url: `https://directtable-s.onrender.com/carregar/turmas/${horaCorrente}`,
     }).then((response) => {
       console.log('data antiga', data)
       console.log('data nova', response.data)
@@ -226,7 +226,7 @@ function Horario() {
 
     axios({
       method: "get",
-      url: `http://localhost:4000/carregar/turmas/${horaCorrente}`,
+      url: `https://directtable-s.onrender.com/carregar/turmas/${horaCorrente}`,
     }).then((response) => {
       console.log(response.data)
       response.data.forEach(element => {
