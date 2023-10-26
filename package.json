@@ -1,4 +1,5 @@
 {
+  "homepage": "http://gatavares.github.io/directtable-app",
   "name": "directtable",
   "version": "0.0.1",
   "private": true,
@@ -31,6 +32,8 @@
     "xlsx": "^0.18.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "test": "set PORT=8000 && react-scripts start",
     "build": "react-scripts build",
@@ -53,5 +56,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
