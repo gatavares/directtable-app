@@ -79,7 +79,7 @@ export default function Calendar() {
     const listen = onAuthStateChanged(auth, (user) => {
       if (user) {
         setAuthUser(user);
-        console.log(user.uid);
+        // console.log(user.uid);
         userTypeCalc(user.uid, user.email);
 
       } else {
@@ -97,8 +97,8 @@ export default function Calendar() {
 
   function userTypeCalc(uid, email) {
     let type = false //true aluno / false professor, secretaria ou direcao
-    console.log(uid)
-    console.log(email)
+    // console.log(uid)
+    // console.log(email)
 
     function checkFirstLetterNumber(_string) {
       return /^\d/.test(_string);
@@ -134,7 +134,7 @@ export default function Calendar() {
         }
       }
     }
-    console.log(verificao)
+    // console.log(verificao)
   }
 
   useEffect(() => {
@@ -162,11 +162,11 @@ export default function Calendar() {
         })
       });
       setAulasData(data);
-      console.log(data)
+      // console.log(data)
       setLoaded(true);
       if (loaded) {
-        console.log(aulasData);
-        console.log(disciplinasData[0]);
+        // console.log(aulasData);
+        // console.log(disciplinasData[0]);
       }
     }).catch(alert);
 
@@ -186,10 +186,10 @@ export default function Calendar() {
 
 
   const handleDateSelect = (selectInfo) => { //criar evento com arrastar
-    console.log(selectInfo.resource.id)
-    console.log(selectInfo.startStr)
-    console.log(selectInfo.endStr)
-    console.log(selectInfo.allDay) //variaveis de seleção
+    // console.log(selectInfo.resource.id)
+    // console.log(selectInfo.startStr)
+    // console.log(selectInfo.endStr)
+    // console.log(selectInfo.allDay) //variaveis de seleção
     setNewAula([selectInfo.resource.id, selectInfo.startStr, selectInfo.endStr, selectInfo.allDay]);
     handleOpenNew();
   }
@@ -198,7 +198,7 @@ export default function Calendar() {
     // if (window.confirm(`Tens a certeza que queres apagar esta aula: '${clickInfo.event.title}'`)) {
     //   clickInfo.event.remove()
     // }
-    console.log(clickInfo.event.id);
+    // console.log(clickInfo.event.id);
     handleOpen(clickInfo.event.id);
   }
 
@@ -281,19 +281,19 @@ export default function Calendar() {
       disciplinaAntiga = ' '
     }
 
-    console.log(
-      {
-        'data Inicio': dataInicio,
-        'data Fim': dataFim,
-        'turma': turma,
-        'disciplina': disciplina,
-        'disciplina Antiga': disciplinaAntiga,
-        'sala': sala,
-        'sala Antiga': salaAntiga,
-        'professor': professor,
-        'alterado': alterado,
-      }
-    )
+    // console.log(
+    //   {
+    //     'data Inicio': dataInicio,
+    //     'data Fim': dataFim,
+    //     'turma': turma,
+    //     'disciplina': disciplina,
+    //     'disciplina Antiga': disciplinaAntiga,
+    //     'sala': sala,
+    //     'sala Antiga': salaAntiga,
+    //     'professor': professor,
+    //     'alterado': alterado,
+    //   }
+    // )
 
     //mandar para a firebase
     axios({

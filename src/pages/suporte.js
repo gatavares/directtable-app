@@ -60,7 +60,7 @@ function Suporte() {
             />
           </Box>
           <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
-            <Button variant="outlined" onClick={() => { alert('Mensagem Enviada Com Sucesso!') }}>Enviar</Button>
+            <Button variant="outlined" onClick={() => { alert('Erro! Mensagem Enviada Com Sucesso!\nMas desativado para prevenção.') }}>Enviar</Button>
           </Box>
         </form>
       </Box>

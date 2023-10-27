@@ -137,7 +137,7 @@ export default function Sidenav() {
   const userSignOut = () => {
     signOut(auth)
       .then(() => {
-        console.log("Saiu com sucesso!");
+        // console.log("Saiu com sucesso!");
         setAuthUser(null);
         window.location.reload();
       })
@@ -146,35 +146,42 @@ export default function Sidenav() {
 
   const url = useLocation();
 
-  const getUrl = () => {
-    if (url.pathname == '/directtable-app/') {
-      setMenuData('/directtable-app/');
-    }
-    else if (url.pathname == '/directtable-app/horario') {
-      setMenuData('/directtable-app/horario');
-    }
-    else if (url.pathname == '/escola') {
-      setMenuData('/directtable-app/escola');
-    }
-    else if (url.pathname == '/gestao') {
-      setMenuData('/directtable-app/gestao');
-    }
-    else if (url.pathname == '/faq') {
-      setMenuData('/directtable-app/faq');
-    }
-    else if (url.pathname == '/suporte') {
-      setMenuData('/directtable-app/suporte');
-    }
-    else if (url.pathname == '/entrar') {
-      setMenuData('/directtable-app/entrar');
-    }
-  }
+  // const getUrl = () => {
+  //   if (url.pathname == '/directtable-app/') {
+  //     setMenuData('/directtable-app/');
+  //   }
+  //   else if (url.pathname == '/directtable-app/horario') {
+  //     setMenuData('/directtable-app/horario');
+  //   }
+  //   else if (url.pathname == '/escola') {
+  //     setMenuData('/directtable-app/escola');
+  //   }
+  //   else if (url.pathname == '/gestao') {
+  //     setMenuData('/directtable-app/gestao');
+  //   }
+  //   else if (url.pathname == '/faq') {
+  //     setMenuData('/directtable-app/faq');
+  //   }
+  //   else if (url.pathname == '/suporte') {
+  //     setMenuData('/directtable-app/suporte');
+  //   }
+  //   else if (url.pathname == '/entrar') {
+  //     setMenuData('/directtable-app/entrar');
+  //   }
+  // }
+
+  // useEffect(() => {
+  //   getUrl();
+  // }, [url.pathname])
 
   useEffect(() => {
-    getUrl();
-  }, [url.pathname])
+    setMenuData(localStorage.getItem('lastPage'))
+  })
 
   useEffect(() => {
+    if (localStorage.getItem('lastPage') == null || localStorage.getItem('lastPage') == 0) {
+      localStorage.setItem('lastPage', 0)
+    }
     if (window.innerWidth >= 850) {
       setOpen(true);
     }
@@ -277,10 +284,13 @@ export default function Sidenav() {
           </DrawerHeader>
           <List>
             {SidebarData.map((item, index) => (
-              <Link to={item.path} key={index}>
+              <Link key={index}>
                 <ListItem disablePadding key={index} sx={{
                   display: 'block',
-                }} onClick={() => setMenuData(item.path)}>
+                }} onClick={() => {
+                  setMenuData(index)
+                  localStorage.setItem('lastPage', index)
+                }}>
                   <Box
                     className={item.className} sx={{ color: colors.texto[500] }}>
                     <ListItemButton
@@ -306,20 +316,20 @@ export default function Sidenav() {
                   </Box>
                   {item.title == 'Gestão' ? <Divider sx={theme.palette.mode === 'dark' ? { borderColor: 'RGB(224, 224, 224, 0.12)' } : { borderColor: 'RGB(224, 224, 224)' }} /> : ''}
                 </ListItem>
-              </Link> 
+              </Link>
             ))}
           </List>
           <Divider sx={theme.palette.mode === 'dark' ? { borderColor: 'RGB(224, 224, 224, 0.12)' } : { borderColor: 'RGB(224, 224, 224)' }} />
         </Drawer>
 
         <Box component="main" sx={{ flexGrow: 1, p: 3, backgroundColor: colors.fundo[500], height: '200%' }}>
-          {menuData == "/directtable-app/" && <Home />}
-          {menuData == "/directtable-app/horario" && <Horario />}
-          {menuData == "/directtable-app/escola" && <Escola />}
-          {menuData == "/directtable-app/gestao" && <ERC />}
-          {menuData == "/directtable-app/faq" && <FAQ />}
-          {menuData == "/directtable-app/suporte" && <Suporte />}
-          {menuData == "/directtable-app/entrar" && <LandingPage />}
+          {menuData == 0 && <Home />}
+          {menuData == 1 && <Horario />}
+          {menuData == 2 && <Escola />}
+          {menuData == 3 && <ERC />}
+          {menuData == 4 && <FAQ />}
+          {menuData == 5 && <Suporte />}
+          {menuData == 6 && <LandingPage />}
         </Box>
       </Box>
     </>

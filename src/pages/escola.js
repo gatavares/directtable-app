@@ -47,7 +47,7 @@ function Escola() {
 
         // for (let y = 0; y < 16; y++) {
         const wsname = wb.SheetNames[index];
-        console.log(index)
+        // console.log(index)
 
         const ws = wb.Sheets[wsname];
 
@@ -65,7 +65,7 @@ function Escola() {
             }
           })
         }
-        console.log(horas)
+        // console.log(horas)
 
         if (horas.length >= 128) {
           loaded = true
@@ -152,11 +152,11 @@ function Escola() {
 
 
     setTimeout(function () {
-      console.log(JSON.stringify(horas));
+      // console.log(JSON.stringify(horas));
 
       setTimeout(async function () {
         axios.post("https://directtable-s.onrender.com/dados/horarios", { dados: horas }).then((res) => {
-          console.log(res);
+          // console.log(res);
           if (res.status == 200) {
             setSave(true);
             window.location.reload();
@@ -233,8 +233,8 @@ function Escola() {
 
   function userTypeCalc(uid, email) {
     let type = false //true aluno / false professor, secretaria ou direcao
-    console.log(uid)
-    console.log(email)
+    // console.log(uid)
+    // console.log(email)
 
     function checkFirstLetterNumber(_string) {
       return /^\d/.test(_string);
@@ -270,7 +270,7 @@ function Escola() {
         }
       }
     }
-    console.log(verificao)
+    // console.log(verificao)
   }
 
 
@@ -295,7 +295,7 @@ function Escola() {
     let disciplinasArr = disciplinas.split(', ')
 
     axios.post("https://directtable-s.onrender.com/dados/professor", { numero: numero, nome: nome, disciplinas: disciplinasArr }).then((res) => {
-      console.log(res);
+      // console.log(res);
       if (res.status == 200) {
         setUpdated(true);
         handleClose();

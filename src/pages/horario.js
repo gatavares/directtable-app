@@ -130,7 +130,7 @@ function Horario() {
       horaCorrenteFim = temposFim[0];
     }
 
-    console.log(mins + ' mins desde do ultimo carregamento de página!')
+    // console.log(mins + ' mins desde do ultimo carregamento de página!')
     let update = false;
 
     axios({
@@ -138,8 +138,8 @@ function Horario() {
       // url: `https://directtable-s.onrender.com/carregar/turmas/8.30`,
       url: `https://directtable-s.onrender.com/carregar/turmas/${horaCorrente}`,
     }).then((response) => {
-      console.log('data antiga', data)
-      console.log('data nova', response.data)
+      // console.log('data antiga', data)
+      // console.log('data nova', response.data)
 
       response.data.forEach(element => {
         dataNova.push({
@@ -157,10 +157,10 @@ function Horario() {
 
 
       if (JSON.stringify(data) != JSON.stringify(response.data)) {
-        console.log('Diferente!')
+        // console.log('Diferente!')
         window.location.reload();
       } else {
-        console.log('Nada de Diferente!')
+        // console.log('Nada de Diferente!')
       }
       update = true;
     }).catch(alert);
@@ -220,15 +220,15 @@ function Horario() {
       horaCorrenteFim = temposFim[0];
       horaCorrente = 8.30;
     }
-    console.log(horaCorrente)
-    console.log(horaCorrenteInicio)
-    console.log(horaCorrenteFim)
+    // console.log(horaCorrente)
+    // console.log(horaCorrenteInicio)
+    // console.log(horaCorrenteFim)
 
     axios({
       method: "get",
       url: `https://directtable-s.onrender.com/carregar/turmas/${horaCorrente}`,
     }).then((response) => {
-      console.log(response.data)
+      // console.log(response.data)
       response.data.forEach(element => {
         data.push({
           turma: element.turma,

@@ -56,8 +56,8 @@ function Login() {
         let data = {};
         event.preventDefault();
         signInWithEmailAndPassword(auth, email, password).then((userCredencial) => {
-            console.log(userCredencial);
-            console.log(userCredencial.user.uid);
+            // console.log(userCredencial);
+            // console.log(userCredencial.user.uid);
             loadingToggle();
 
             axios({
@@ -65,7 +65,7 @@ function Login() {
                 url: `https://directtable-s.onrender.com/entrar/${userCredencial.user.uid}/${userCredencial.user.email}`,
             }).then(function (response) {
                 data = response.data;
-                console.log(data);
+                // console.log(data);
                 loadData = true;
 
                 if (loadData === true) {
@@ -101,14 +101,10 @@ function Login() {
     const userSignOutError = () => {
         signOut(auth)
             .then(() => {
-                console.log("Erro na Autenticação!");
+                // console.log("Erro na Autenticação!");
             })
             .catch((error) => console.log(error));
     };
-
-    useEffect(() => {
-        console.log(isMobile);
-    }, [window.screen.height])
 
     return (
         <>
