@@ -4,16 +4,12 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  /* 
-    FOR YOUR SAFETY CHANGE YOUR API KEY
-    https://firebase.google.com/docs/projects/api-keys
-*/
-  apiKey: process.env.FIREBASE_API_KEY,
-  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-  projectId: "directtable-pap",
-  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: "858845601151",
-  appId: process.env.FIREBASE_APP_ID,
+    apiKey: process.env.FIREBASE_API_KEY,
+    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+    projectId: "directtable-pap",
+    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: "858845601151",
+    appId: process.env.FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
