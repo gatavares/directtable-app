@@ -3,14 +3,17 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
-
 const firebaseConfig = {
-    apiKey: "AIzaSyCVPtIiPuIAmmj3wAestjmsTV49e7bexAE",
-    authDomain: "directtable-pap.firebaseapp.com",
-    projectId: "directtable-pap",
-    storageBucket: "directtable-pap.appspot.com",
-    messagingSenderId: "858845601151",
-    appId: "1:858845601151:web:584c3a272d7b7698d18e4a",
+  /* 
+    FOR YOUR SAFETY CHANGE YOUR API KEY
+    https://firebase.google.com/docs/projects/api-keys
+*/
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  projectId: "directtable-pap",
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: "858845601151",
+  appId: process.env.FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
