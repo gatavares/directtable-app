@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/directtable-app/static/css/main.859c8924.css",
-    "main.js": "/directtable-app/static/js/main.4f39160a.js",
+    "main.js": "/directtable-app/static/js/main.c7de0cba.js",
     "static/media/directtable.png": "/directtable-app/static/media/directtable.5de09a7d7da4e705377f.png",
     "static/media/Line-Gaps-2.png": "/directtable-app/static/media/Line-Gaps-2.f54fcf4235f9ee0d070a.png",
     "index.html": "/directtable-app/index.html",
     "main.859c8924.css.map": "/directtable-app/static/css/main.859c8924.css.map",
-    "main.4f39160a.js.map": "/directtable-app/static/js/main.4f39160a.js.map"
+    "main.c7de0cba.js.map": "/directtable-app/static/js/main.c7de0cba.js.map"
   },
   "entrypoints": [
     "static/css/main.859c8924.css",
-    "static/js/main.4f39160a.js"
+    "static/js/main.c7de0cba.js"
   ]
 }
