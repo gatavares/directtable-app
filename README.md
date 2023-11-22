@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+<img src="https://github.com/gatavares/directtable/blob/master/rep.components/directtable.readme.png" alt="Foto" style="height: 100%; width:100%;"/>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Em que consiste?
+Este projeto é a minha ***PAP*** (Prova de Aptidão Profissonal) e será desenvolvido em **React JS**, **Node JS**, **Express**, **Cors** e **Firebase**.
 
-## Available Scripts
+### **Objetivos do projeto:**
+•Melhorar a organização diária do horário escolar e proporcionar uma fácil e rápida visualização pelos alunos de alterações de salas, disciplinas ou cancelamentos de aulas.<br>
+•Facilitar as alterações e libertar o *STAFF* e professores para outras atividades escolares.<br>
+•Possibilitar trocas (salas, disciplinas) convenientes entre professores sem necessitar sobrecarregar o *STAFF* da escola.<br>
+•Permitir a fácil visualização através de monitores espalhados pelos andares da escola (aproveitando os já existentes, ex.: Piso 0 e 1).
 
-In the project directory, you can run:
+### **Objetivos pessoais / técnicos:**
+•Aprimorar conhecimentos em desenvolvimento **React** (**JavaScript**) e **Firebase**.<br>
+•Desenvolver competências de **Back-End** através de **Node JS**, **Express** e **Cors**.<br>
+•Desenvolver um projeto que possa entrar em produção.<br>
+•Ajudar os meus colegas que frequentam pela escola.<br>
+•Facilitar o trabalho do *STAFF* da escola.<br>
 
-### `npm start`
+# Estrutura: 
+**<font size="6">Tecnologias:</font>**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    React Js
+    Node Js
+    Express 
+    Axios
+    Full Calendar
+    Material ui
+    Firebase
+    GitHub
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+# Conclusão
+Esta **PAP** permitirá a muitos alunos e professores uma melhor organização e reduzir o trabalho do *STAFF* escolar.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este projeto será desafiante para mim, pois terei de aprimorar e explorar linguagens e *Frameworks* novas e ainda trabalhar num projeto que possa vir a beneficiar a comunidade escolar.
